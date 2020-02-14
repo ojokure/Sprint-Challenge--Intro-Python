@@ -62,7 +62,7 @@ print(e)
 # inclusive.
 print("Names and ages between 27 and 32:")
 condition = [27, 28, 29, 30, 31, 32]
-f = [f'({h.name}, {h.age})' for h in humans if h.age in condition]
+f = [(f'{h.name}', h.age) for h in humans if h.age in condition]
 print(f)
 
 # Write a list comprehension that creates a list of new Humans like the old
@@ -75,5 +75,5 @@ print(g)
 
 # Write a list comprehension that contains the square root of all the ages.
 print("Square root of ages:")
-h = [h.age ** 2 for h in humans]
+h = [h.age ** 0.5 for h in humans]
 print(h)
