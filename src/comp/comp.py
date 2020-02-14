@@ -28,14 +28,15 @@ humans = [
 # Write a list comprehension that creates a list of names of everyone
 # whose name starts with 'D':
 print("Starts with D:")
-condition = "D"
-a = [h for h in humans if hasattr(h, 'D')]
+condition = ["D"]
+a = [h.name for h in humans if h.name[0] in condition]
 print(a)
 
 # Write a list comprehension that creates a list of names of everyone
 # whose name ends in "e".
 print("Ends with e:")
-b = []
+condition = ["e"]
+b = [h.name for h in humans if h.name[-1] in condition]
 print(b)
 
 # Write a list comprehension that creates a list of names of everyone
