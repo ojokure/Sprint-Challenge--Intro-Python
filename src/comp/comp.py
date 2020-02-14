@@ -1,5 +1,8 @@
-# The following list comprehension exercises will make use of the 
-# defined Human class. 
+# The following list comprehension exercises will make use of the
+# defined Human class.
+import math
+
+
 class Human:
     def __init__(self, name, age):
         self.name = name
@@ -7,6 +10,7 @@ class Human:
 
     def __repr__(self):
         return f"<Human: {self.name}, {self.age}>"
+
 
 humans = [
     Human("Alice", 29),
@@ -24,7 +28,8 @@ humans = [
 # Write a list comprehension that creates a list of names of everyone
 # whose name starts with 'D':
 print("Starts with D:")
-a = []
+condition = "D"
+a = [h for h in humans if hasattr(h, 'D')]
 print(a)
 
 # Write a list comprehension that creates a list of names of everyone
@@ -41,7 +46,7 @@ print(c)
 
 # Write a list comprehension that creates a list of all the ages plus 10.
 print("Ages plus 10:")
-d = []
+d = [h.age + 10 for h in humans]
 print(d)
 
 # Write a list comprehension that creates a list of strings which are the name
@@ -66,6 +71,5 @@ print(g)
 
 # Write a list comprehension that contains the square root of all the ages.
 print("Square root of ages:")
-import math
 h = []
 print(h)
