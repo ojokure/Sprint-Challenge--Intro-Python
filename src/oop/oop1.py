@@ -20,15 +20,28 @@
 
 
 class Vehicle:
-    def __init__(self, name):
-        self.name = name
+    pass
 
 
 class GroundVehicle(Vehicle):
-    def __init__(self, name):
-        self.name = name
+    pass
 
 
 class FlightVehicle(Vehicle):
-    def __init__(self, name):
-        self.name = name
+    pass
+
+
+class Car(GroundVehicle):
+    pass
+
+
+class Motorcycle(GroundVehicle):
+    pass
+
+
+class Starship(FlightVehicle):
+    pass
+
+
+class Airplane(FlightVehicle):
+    pass
